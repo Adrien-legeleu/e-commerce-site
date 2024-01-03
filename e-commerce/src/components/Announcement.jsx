@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import { mobile } from '../responsive';
 
 
 const Container=styled.div`
@@ -14,6 +15,8 @@ const Container=styled.div`
     font-weight:500;
     border-radius: 5px 5px 10px  10px;
     animation:announcement 30s ease-in-out infinite;
+    ${mobile({animation:"none" })}
+
 
     @keyframes announcement {
         0%{

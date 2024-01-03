@@ -1,9 +1,11 @@
 import { Facebook, Instagram, LocationOn, LocationOnOutlined, MailOutline, Phone, Pinterest, Twitter } from '@mui/icons-material';
 import React from 'react'
 import styled from "styled-components";
+import { mobile } from '../responsive';
 
 const Container=styled.div`
     display: flex;
+    ${mobile({flexDirection:"column" , textAlign:'center'})}
 `;
 const Left=styled.div`
     flex: 1;
@@ -21,6 +23,8 @@ const Desc=styled.div`
 `;
 const SocialContainer=styled.div`
     display: flex;
+    gap: 10px;
+    ${mobile({justifyContent:"center"})}
 `;
 const SocialIcon=styled.div`
     width: 40px;
@@ -31,12 +35,15 @@ const SocialIcon=styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
 `;
 
 
 const Center=styled.div`
      flex: 1;
      padding: 20px;
+       ${mobile({display:"none"})}
+
 `;
 const Title=styled.h3`
     margin-bottom:30px;
@@ -57,6 +64,7 @@ const ListItem=styled.li`
 const Right=styled.div`
      flex: 1;
      padding: 20px;
+     ${mobile({backgroundColor:"#fdf0f0"})}
 `;
 
 const ContactItem=styled.div`

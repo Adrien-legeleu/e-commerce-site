@@ -5,6 +5,7 @@ import Announcement from '../components/Announcement';
 import Products from '../components/Products';
 import NewsLetter from '../components/NewsLetter';
 import Footer from '../components/Footer';
+import { mobile } from '../responsive';
 
 const Container=styled.div``;
 const Title=styled.h1`
@@ -18,6 +19,7 @@ const Filter=styled.div`
     margin: 20px;
     display: flex;
     align-items: center;
+    ${mobile({flexDirection:"column" , alignItems:"start" })}
     gap: 10px;
 `;
 const FilterText=styled.div`

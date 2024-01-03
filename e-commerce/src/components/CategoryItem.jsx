@@ -1,16 +1,20 @@
 import React from 'react'
 import styled from "styled-components";
+import { mobile } from '../responsive';
 
 const Container=styled.div`
     flex: 1;
     height: 70vh;
     position: relative;
+    width: 100%;
 `;
 const Image=styled.img`
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
+      ${mobile({height:"30vh"  ,margin:"0 auto"})}
+
 `;
 const Title=styled.div`
     color: white;
